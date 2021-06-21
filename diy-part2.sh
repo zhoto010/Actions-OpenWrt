@@ -26,7 +26,8 @@ rm -rf package/lean/luci-theme-netgear
 #下载主题luci-theme-argon
 git clone https://github.com/YL2209/luci-theme-argon-lr.git package/lean/luci-theme-argon-lr
 git clone https://github.com/YL2209/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
-
+echo 'CONFIG_PACKAGE_luci-theme-argon-lr=y' >>.config
+echo 'CONFIG_PACKAGE_luci-theme-infinityfreedom=y' >>.config
 echo '添加主题argon'
 git clone $theme_argon package/lean/luci-theme-argon-mc
 echo 'CONFIG_PACKAGE_luci-theme-argon-mc=y' >>.config

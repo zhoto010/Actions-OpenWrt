@@ -54,10 +54,3 @@ git clone $lienol_url package/Lienol
 echo '添加filebrowser'
 echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
 echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
-
-echo '添加OpenAppFilter过滤器'
-git clone $filter_url package/OpenAppFilter
-echo 'CONFIG_PACKAGE_luci-app-oaf=y' >>.config
-echo 'CONFIG_PACKAGE_kmod-oaf=y' >>.config
-echo 'CONFIG_PACKAGE_appfilter=y' >>.config
-echo 'CONFIG_PACKAGE_luci-i18n-oaf-zh-cn=y' >>.config

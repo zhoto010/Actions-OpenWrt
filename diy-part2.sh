@@ -19,4 +19,4 @@ echo '添加OpenClash'
 git clone $openClash_url package/lean/luci-app-openclash
 
 echo '添加Passwall'
-git clone $passwall_url package/passwall
+git clone $passwall_url package/lean/luci-app-passwall
